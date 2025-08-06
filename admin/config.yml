@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: Malaroast/RBCL  # 👉 본인의 GitHub 저장소 이름으로 수정 필요
   branch: main
 
 media_folder: "images/uploads"
