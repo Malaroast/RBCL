@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: roast-mala/my-regulation-site  # 👉 본인의 GitHub 저장소 이름으로 수정 필요
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "rules"
+    label: "규정"
+    folder: "rules"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "내용", name: "body", widget: "markdown" }
